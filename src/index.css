@@ -79,11 +79,18 @@ ul {
 
 .sidebar--number {
   display: flex;
-  padding: 8px;
-  justify-content: center;
-  align-items: center;
+  padding: 8px;  
   border-radius: 50%;
   background: var(--secondary-100, #FFCC91);
+  font-size: 14px;
+}
+
+.number-chat-1 {
+  padding: 3px 8px;
+}
+
+.number-chat-2 {
+  padding: 4px 6px;
 }
 
 .bottom-menu ul {
@@ -117,6 +124,24 @@ ul {
   gap: 10px;
   background: white;
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.shop-name {
+  display: flex;
+  background-color: #f5e4d2;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.nav--dropdown, .down-icon {
+  margin-left: 8px;
+}
+
+.down-icon:hover {
+  transition: ease-in 1s;
+  ;
 }
 
 .number {
@@ -295,11 +320,11 @@ small {
 }
 
 .graph-img {
-  width: 185px;
-  height: 185px;
+  width: 160px;
+  height: 160px;
   text-align: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 15px;
   flex-shrink: 0;
 }
 
@@ -322,6 +347,7 @@ small {
 
 .product-info {
   background: #5570F1;
+  color: white;
 }
 
 .card-icon {
@@ -339,6 +365,7 @@ small {
 
 .bottom-info {
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .summary-sales {
@@ -367,6 +394,7 @@ small {
   align-self: stretch;
   border-bottom: 1px solid var(--stroke, #F1F3F9);
   margin-top: 23px;
+  margin-bottom: 10px;
 }
 
 .phone-img {
@@ -389,9 +417,47 @@ small {
   flex-direction: column;
 }
 
-@media screen and (min-width: 1024px) {
+.amount, .status {
+  margin-top: 10px;
+}
+
+.listing-name {
+  color: rgb(141, 88, 88);
+}
+
+.amount {
+  font-weight: 500;
+}
+
+.listing-date-status {
+  color: gray;
+}
+
+.status {
+  background-color: #f5e4d2;
+  border-radius: 10px;
+  padding: 3px 12px;
+  color: black;
+  text-align: center;
+}
+
+.dropdown-info {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
   
   .main-page {
-    margin-left: 340px;
+    width: 70%;
+    margin-left: auto;
   }
+}
+ 
+@media screen and (min-width: 1110px) {
+  
+  .main-page {
+    width: 80%;
+    margin-left: auto;
+  }
+
 }

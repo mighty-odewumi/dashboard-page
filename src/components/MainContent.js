@@ -1,28 +1,8 @@
+import OrderListing from "./OrderListing";
 import SummaryCards from "./SummaryCards";
-import data from "./data";
+// import { handleDropdownClick } from "./SummaryCards";
 
 export default function MainContent() {
-
-  const phoneData = data.map((val, index) => (
-    <div className="order-listing" key={index}>
-      <img
-        src={val.imgUrl}
-        alt="a mobile phone"
-        className="phone-img"
-      />
-
-      <div className="listing-details">
-        <span className="listing-name">{val.phoneName}</span>
-        <span className="amount">#{val.amount} x {val.numberOfGoods}</span>
-      </div>
-
-      <section className="listing-date-status">
-        <span className="date">{val.date}</span>
-        <span className="status">{val.status}</span>
-      </section>
-    </div>
-  ));
-
 
   return (
     <div className="main-content-container">
@@ -41,6 +21,7 @@ export default function MainContent() {
                     src="/assets/chevron-down1.svg"
                     alt="down icon"
                     className="down-icon"
+                    //{onClick={handleDropdownClick}}
                   />
                 </span>
               </section>
@@ -110,6 +91,7 @@ export default function MainContent() {
                       src="/assets/chevron-down1.svg"
                       alt="down icon"
                       className="down-icon"
+                      // {onClick={handleDropdownClick}}
                     />
                   </span>
                 </section>
@@ -166,12 +148,10 @@ export default function MainContent() {
           </div>
         </div>
 
-        <div className="right-info">
-          <h4>Recent Orders</h4>
-          {phoneData}
-        </div>
+        <OrderListing />
       </section>
       
     </div>
   );
 }
+

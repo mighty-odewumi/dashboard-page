@@ -1,6 +1,26 @@
+import dropdownFilter from "./dropdownFilter";
+
+
 export default function SummaryCards() {
-  return (
+
+  const dropInfo = dropdownFilter.map((val, index) => (
+    <div className="dropdown-info">
+      <ul>
+        <li>{val}</li>
+
+      </ul>
+    </div>
+  ));
+
+  function handleDropdownClick() {
+    alert("Information not available at the moment!\n\nCheck back later.");
+    return dropInfo;
     
+  
+  // console.log(dropInfo);
+  }
+
+  return (
     <div className="summary-cards-container">
         <div className="summary-card">
           <section className="section-heading">
@@ -16,6 +36,8 @@ export default function SummaryCards() {
                 src="/assets/chevron-down1.svg"
                 alt="down icon"
                 className="down-icon"
+                onClick={handleDropdownClick}
+                title="Hello world"
               />
             </span>
           </section>
@@ -51,6 +73,7 @@ export default function SummaryCards() {
                 src="/assets/chevron-down1.svg"
                 alt="down icon"
                 className="down-icon"
+                onClick={handleDropdownClick}
               />
             </span>
           </section>
@@ -88,6 +111,7 @@ export default function SummaryCards() {
                 src="/assets/chevron-down1.svg"
                 alt="down icon"
                 className="down-icon"
+                onClick={handleDropdownClick}
               />
             </span>
           </section>
@@ -112,6 +136,7 @@ export default function SummaryCards() {
             </div>
           </section>
         </div>
+
     </div>
   )
 }

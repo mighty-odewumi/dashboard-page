@@ -26,7 +26,7 @@ export default function Sidebar() {
 
               <span className="sidebar--menu-text">Orders</span>
 
-              <span className="sidebar--number">3</span>
+              <span className="sidebar--number number-chat-1 notif-number">3</span>
             </li>
 
             <li>
@@ -58,7 +58,7 @@ export default function Sidebar() {
 
               <span className="sidebar--menu-text">Conversations</span>
 
-              <span className="sidebar--number">18</span>
+              <span className="sidebar--number notif-number number-chat-2">18</span>
             </li>
 
             <li>

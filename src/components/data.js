@@ -40,4 +40,44 @@ export default [
     amount: 70000,
     numberOfGoods: "9"
   },
+
+  {
+    id: 5,
+    imgUrl: "/assets/phone.png",
+    status: "Pending",
+    date: "31 Jul, 2023",
+    phoneName: "Samsung Galaxy S3",
+    amount: 80000,
+    numberOfGoods: "4"
+  },
+
+  {
+    id: 6,
+    imgUrl: "/assets/phone.png",
+    status: "Completed",
+    date: "31 Jul, 2023",
+    phoneName: "Samsung Galaxy S3",
+    amount: 80000,
+    numberOfGoods: "6"
+  },
+
+  {
+    id: 7,
+    imgUrl: "/assets/phone.png",
+    status: "Pending",
+    date: "31 Jul, 2023",
+    phoneName: "Samsung Galaxy S3",
+    amount: 80000,
+    numberOfGoods: "4"
+  },
+
+  {
+    id: 8,
+    imgUrl: "/assets/phone.png",
+    status: "Pending",
+    date: "31 Jul, 2023",
+    phoneName: "Samsung Galaxy S3",
+    amount: 80000,
+    numberOfGoods: "2"
+  },
 ]
